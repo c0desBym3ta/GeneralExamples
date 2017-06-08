@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/BuckyInheritance.dir/main.cpp.o CMakeFiles/BuckyInheritance.dir/Mother.cpp.o CMakeFiles/BuckyInheritance.dir/Daughter.cpp.o  -o BuckyInheritance 

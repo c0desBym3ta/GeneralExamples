@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/s3th/Documents/examples/BuckyInheritance/Daughter.cpp
+Daughter.h
+/home/s3th/Documents/examples/BuckyInheritance/Daughter.h
+
+/home/s3th/Documents/examples/BuckyInheritance/Daughter.h
+Mother.h
+/home/s3th/Documents/examples/BuckyInheritance/Mother.h
+
+/home/s3th/Documents/examples/BuckyInheritance/Mother.cpp
+Mother.h
+/home/s3th/Documents/examples/BuckyInheritance/Mother.h
+
+/home/s3th/Documents/examples/BuckyInheritance/Mother.h
+iostream
+-
+string
+-
+
+/home/s3th/Documents/examples/BuckyInheritance/main.cpp
+iostream
+-
+string
+-
+Mother.h
+/home/s3th/Documents/examples/BuckyInheritance/Mother.h
+Daughter.h
+/home/s3th/Documents/examples/BuckyInheritance/Daughter.h
+
