@@ -77,7 +77,14 @@ int main(){
 	cout << "Vector(ve) capacity: "<< ve.capacity() << endl;
 	cerr << "COMMENT: Memory already allocated so no need to make againg allocation. No change to the capacity." << endl;
 	line();
+	
+	cout << "Shrinking the capacity to fit with the size. No very good technique.." << endl;
+	ve.shrink_to_fit();
+	cout << "Vector(ve) size: " << ve.size() << endl;
+	cout << "Vector(ve) capacity : " << ve.capacity() << endl;
+	line();
 
+	
 	return 0;
 }
 
