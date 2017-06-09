@@ -83,7 +83,25 @@ int main(){
 	cout << "Vector(ve) size: " << ve.size() << endl;
 	cout << "Vector(ve) capacity : " << ve.capacity() << endl;
 	line();
-
+	
+	cout << "Clearing the vector clears the size but the capacity is already occupied." << endl;
+	ve.clear();
+	cout << "Vector(ve) size: " << ve.size() << endl;
+	cout << "Vector(ve) capacity: " << ve.capacity() << endl;
+	line();
+	
+	cout << "Checking if the vector is empty. " << endl;
+	if(ve.empty())
+		cout << "Vector empty." << endl;
+	else
+		cout << "Vector not empty." << endl;
+	line();
+	
+	cout << "Making push back to verify that the empty control works." << endl;
+	ve.push_back(5);
+	if(!ve.empty())
+		cout << "Vector not empty." << endl;
+	line();
 	
 	return 0;
 }
