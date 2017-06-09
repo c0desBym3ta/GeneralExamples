@@ -58,7 +58,25 @@ int main(){
 	cout << "---------------------------------------------" << endl;
 	vector <double> ve(100);
 	cout << "Vector(ve) size: "<< ve.size() << endl;
+	line();
+
+	cout << "Showing the capacity. " <<endl;
+	cout << "Vector(ve) capacity: " << ve.capacity() << endl;
+	line();
 	
+	cout << "Showing size and capacity after pushing back only one element." << endl;
+	ve.push_back(10);
+	cout << "Vector(ve) size: "<< ve.size() << endl;
+	cout << "Vector(ve) capacity: " << ve.capacity() << endl;
+	cerr << "COMMENT: Overloading the memory from 100 to 101 so need more allocation. Capacity will be increased." << endl;
+	line();
+	
+	cout << "Pushing back second element. " << endl;
+	ve.push_back(16);
+	cout << "Vector(ve) size: " << ve.size() << endl;
+	cout << "Vector(ve) capacity: "<< ve.capacity() << endl;
+	cerr << "COMMENT: Memory already allocated so no need to make againg allocation. No change to the capacity." << endl;
+	line();
 
 	return 0;
 }
