@@ -16,6 +16,15 @@ public:
     virtual void talk() = 0; //Pure funtion because every animal has this but on its own way.
     virtual void run() = 0; //So no need of implementation.
 
+    void setName(string name){Animal::name = name;}
+    string getName() const{return name;}
+
+    void setAge(int age){Animal::age = age;}
+    int getAge() const{return age;}
+
+    void setSex(string sex){Animal::sex = sex;}
+    string getSex() const{return sex;}
+
 protected: //Protected because other classes will inherit from this. So they need access.
     string name;
     int age;
