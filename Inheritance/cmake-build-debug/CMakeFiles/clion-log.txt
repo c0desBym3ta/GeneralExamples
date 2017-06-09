@@ -1,0 +1,4 @@
+/home/s3th/Documents/CLion-2017.1.2/clion-2017.1.2/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/s3th/Documents/examples/Inheritance
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/s3th/Documents/examples/Inheritance/cmake-build-debug

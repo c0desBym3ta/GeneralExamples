@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/s3th/Documents/examples/Inheritance/Animal.cpp
+Animal.h
+/home/s3th/Documents/examples/Inheritance/Animal.h
+
+/home/s3th/Documents/examples/Inheritance/Animal.h
+iostream
+-
+string
+-
+
+/home/s3th/Documents/examples/Inheritance/Cat.cpp
+Cat.h
+/home/s3th/Documents/examples/Inheritance/Cat.h
+
+/home/s3th/Documents/examples/Inheritance/Cat.h
+
+/home/s3th/Documents/examples/Inheritance/Dog.cpp
+Dog.h
+/home/s3th/Documents/examples/Inheritance/Dog.h
+
+/home/s3th/Documents/examples/Inheritance/Dog.h
+Animal.h
+/home/s3th/Documents/examples/Inheritance/Animal.h
+
+/home/s3th/Documents/examples/Inheritance/main.cpp
+iostream
+-
+string
+-
+Animal.h
+/home/s3th/Documents/examples/Inheritance/Animal.h
+Dog.h
+/home/s3th/Documents/examples/Inheritance/Dog.h
+Cat.h
+/home/s3th/Documents/examples/Inheritance/Cat.h
+

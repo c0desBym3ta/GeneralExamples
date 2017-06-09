@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/Inheritance.dir/main.cpp.o CMakeFiles/Inheritance.dir/Dog.cpp.o CMakeFiles/Inheritance.dir/Animal.cpp.o CMakeFiles/Inheritance.dir/Cat.cpp.o  -o Inheritance 

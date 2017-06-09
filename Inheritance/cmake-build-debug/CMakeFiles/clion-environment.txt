@@ -1,0 +1,2 @@
+Options: 
+CMake: 3.7.2@/home/s3th/Documents/CLion-2017.1.2/clion-2017.1.2/bin/cmake/bin/cmake
