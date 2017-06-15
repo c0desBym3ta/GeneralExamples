@@ -21,8 +21,10 @@ public:
 		}
 		void setCountry(string country){Address::country = country;}
 		string getCountry() const{return country;}
+		
 		void setStreetName(string streetName){Address::streetName = streetName;}
 		string getStreetName() const{return streetName;}
+		
 		void setHouseNumber(int houseNumber){Address:houseNumber = houseNumber;}
 		int getHouseNumber() const{return houseNumber;}
 	private:
