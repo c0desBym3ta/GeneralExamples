@@ -7,18 +7,35 @@ using namespace std;
 //The problem is when we want to use the dymamic allocation.
 class Person{
 public:
-	Person(string name, int age) : name(name), age(age){}
+
+	//Making dynamic with pointer the bit by bit operations takes place. So it copies the info.
+	//So at tha name variable contains the address of name so the address wil be copies with results the change of the value.
+	//So we need to use a copy constructor.
+	Person(string name, int age){
+		cout << "Default person constructor." << endl;
+		this->name = new string(name);
+		this->age = age;
+	}
+
+	//Our copy constructor.
+	//Copy constructor will be called anytime we copy and object of this class.
+	Person(const Person &person){
+		//So we need anytime it copies to allocate a different memory and changes the string.
+		cout << "Copy person constructor. " << endl;	
+		name = new string(*person.name); //It's a memory address so we need to use *.
+		age = person.age; //It's not a memory address so no need of *.
+	}
 	
 	void changeNameAge(string name, int age){
-		Person::name = name;
-		Person::age = age;
+		*(this->name) = name;
+		this->age = age;
 	}
 	
 	void introduce(){
-		cout << "My name is  "<< name << " and my age is " << age << "." << endl;
+		cout << "My name is  "<< *name << " and my age is " << age << "." << endl;
 	} 
 	
-	string name;
+	string *name;
 	int age;
 	
 private:
